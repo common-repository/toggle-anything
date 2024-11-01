@@ -1,0 +1,183 @@
+/* style.scss */
+.wp-block-nickpagz-toggle-anything {
+	.toggle-anything {
+		display: none;
+		align-items: center;
+	}
+
+	.noscript-fallback {
+		display: none;
+	}
+
+	.noscript-fallback.visible {
+		display: block;
+	}
+
+	.switch {
+		position: relative;
+		display: inline-block;
+		width: 60px;
+		height: 34px;
+	}
+
+	.switch input {
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+
+	.toggle {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #ccc;
+		transition: .4s;
+		border-radius: 34px;
+	}
+
+	.toggle:before {
+		position: absolute;
+		content: "";
+		height: 26px;
+		width: 26px;
+		left: 4px;
+		bottom: 4px;
+		background-color: white;
+		transition: .4s;
+	}
+
+	input:checked + .toggle {
+		background-color: #2196F3;
+	}
+
+	input:checked + .toggle:before {
+		transform: translateX(calc(100% - 4px - 26px));
+	}
+
+	.toggle.round {
+		border-radius: 34px;
+	}
+
+	.toggle.round:before {
+		border-radius: 50%;
+	}
+
+	.toggle-anything .toggle.round::before {
+		height: var(--toggle-before-height);
+		width: var(--toggle-before-width);
+		border-radius: var(--toggle-before-border-radius);
+		left: var(--toggle-before-left);
+		bottom: var(--toggle-before-bottom);
+		background-color: var(--toggle-before-bg-color);
+	}
+
+	.toggle-anything .switch input:checked + .toggle::before {
+		transform: translateX(var(--toggle-before-translate-x));
+	}
+}
+
+.npagz-toggle-anything-js-enabled {
+
+	.toggle-anything {
+		display: flex;
+	}
+
+	.noscript-fallback {
+		display: flex;
+	}
+
+	.toggle-anything-noscript-hide {
+
+		&__block {
+			display: block;
+		}
+
+		&__flex {
+			display: flex;
+		}
+
+		&__inline {
+			display: inline;
+		}
+
+		&__inline-block {
+			display: inline-block;
+		}
+
+		&__grid {
+			display: grid;
+		}
+	}
+
+	.toggle-anything-noscript-show {
+
+		&__block {
+			display: none;
+		}
+	
+		&__flex {
+			display: none;
+		}
+	
+		&__inline {
+			display: none;
+		}
+	
+		&__inline-block {
+			display: none;
+		}
+	
+		&__grid {
+			display: none;
+		}
+	}
+}
+
+.toggle-anything-noscript-hide {
+
+	&__block {
+		display: none;
+	}
+
+	&__flex {
+		display: none;
+	}
+
+	&__inline {
+		display: none;
+	}
+
+	&__inline-block {
+		display: none;
+	}
+
+	&__grid {
+		display: none;
+	}
+}
+
+.toggle-anything-noscript-show {
+
+	&__block {
+		display: block;
+	}
+
+	&__flex {
+		display: flex;
+	}
+
+	&__inline {
+		display: inline;
+	}
+
+	&__inline-block {
+		display: inline-block;
+	}
+
+	&__grid {
+		display: grid;
+	}
+}

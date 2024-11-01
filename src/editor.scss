@@ -1,0 +1,56 @@
+/**
+ * Editor Styles
+ */
+
+.wp-block-nickpagz-toggle-anything {
+	.toggle-anything {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.toggle-anything-noscript-hide {
+
+	&__block {
+		display: block;
+	}
+
+	&__flex {
+		display: flex;
+	}
+
+	&__inline {
+		display: inline;
+	}
+
+	&__inline-block {
+		display: inline-block;
+	}
+
+	&__grid {
+		display: grid;
+	}
+}
+
+.toggle-anything-noscript-show {
+
+	&__block {
+		display: block;
+	}
+
+	&__flex {
+		display: flex;
+	}
+
+	&__inline {
+		display: inline;
+	}
+
+	&__inline-block {
+		display: inline-block;
+	}
+
+	&__grid {
+		display: grid;
+	}
+}
